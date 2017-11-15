@@ -5102,7 +5102,8 @@ img {
 .calendar-table {
   display: block;
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  margin: 30px 0 50px 0; }
   .calendar-table div {
     display: inline-block;
     vertical-align: top; }
