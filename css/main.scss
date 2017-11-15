@@ -42,8 +42,23 @@ $plenary: #ff927f;
 }
 .jumbotron-description {
     padding-top: 20px;
+    margin-left: -50px;
     h2{
         font-size: 1.5rem;
+    }
+    
+}
+@media(max-width: 1199px){
+    .jumbotron-description{
+        margin-left: 0 !important;
+    }
+}
+@media(max-width: 992px){
+    .jumbotron-description{
+        padding-top: 12px;
+        h2 {
+        font-size: 1.2rem;
+      }
     }
 }
 @media(max-width: 767px){
@@ -55,14 +70,7 @@ $plenary: #ff927f;
   }
 
 }
-@media(max-width: 992px){
-    .jumbotron-description{
-        padding-top: 12px;
-        h2 {
-        font-size: 1.2rem;
-      }
-    }
-}
+
 
 .about-profile-picture {
   margin: 15px;
@@ -189,6 +197,9 @@ img {
     div{
         display: inline-block;
         vertical-align: top; 
+    }
+    .tuesday-table{
+        margin: 0 5px;
     }
     table{
         border: 0;
