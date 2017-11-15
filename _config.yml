@@ -4,7 +4,7 @@ description: >
   Trust and Internet Identity Meeting Europe<br>
   5.-8. Feb. 2018<Br>
   Workshops and Unconference
-baseurl: "/tiimeworkshop.eu" # the subpath of your site, e.g. /blog
+baseurl: "/TiimeworkshopEu" # the subpath of your site, e.g. /blog
 url: "https://rhoerbe.github.io" # the base hostname & protocol for your site
 
 # Footer Settings
