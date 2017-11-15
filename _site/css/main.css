@@ -5014,7 +5014,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   height: auto; }
 
 .jumbotron {
-  background-image: url(/tiimeworkshop.eu/img/background01.png);
+  background-image: url(/TiimeworkshopEu/img/background01.png);
   background-size: cover; }
 
 .sidebar-module {
@@ -5100,63 +5100,644 @@ img {
   width: 100%; }
 
 .calendar-table {
-  display: inline-block;
-  float: left;
-  width: 36%;
+  display: block;
+  width: 100%;
   overflow: hidden; }
-  .calendar-table .table-heading {
-    text-align: center; }
+  .calendar-table div {
+    display: inline-block;
+    vertical-align: top; }
   .calendar-table table {
-    max-width: 100%; }
-    .calendar-table table tr {
-      height: 45px; }
-      .calendar-table table tr td {
-        border: 1px solid #333;
-        background: #fff;
-        width: 25%;
-        text-align: center;
-        padding: 0 5px;
-        font-size: 12px; }
-    .calendar-table table th {
-      text-align: center;
-      font-size: 14px; }
-    .calendar-table table .time-cell {
-      vertical-align: top;
-      width: 60px; }
-
-.calendar-table.wedthur-table {
-  width: 28%; }
-
-.calendar-table.tuesday-table table {
-  border-right: 0;
-  border-left: 0; }
-
-.fim4r {
-  background-color: #23c0ff !important; }
-
-.fedbc {
-  background-color: #c8ff89 !important; }
-
-.hub {
-  background-color: #ffeb89 !important; }
-
-.python {
-  background-color: #ffc689 !important; }
-
-.pythonextra {
-  background-color: #ffdcc1 !important; }
-
-.pause {
-  background-color: #e0e0e0 !important; }
-
-.keynote {
-  background-color: #ffe7d6 !important; }
-
-.agenda {
-  background-color: #ffdc91 !important; }
-
-.session {
-  background-color: #ffc62b !important; }
-
-.plenary {
-  background-color: #ff927f !important; }
+    border: 0; }
+    .calendar-table table tr td {
+      padding: 0px;
+      line-height: 1.1; }
+    .calendar-table table tr td:first-child {
+      padding-top: 0px; }
+  .calendar-table tr {
+    mso-height-source: auto; }
+  .calendar-table col {
+    mso-width-source: auto; }
+  .calendar-table br {
+    mso-data-placement: same-cell; }
+  .calendar-table .style0 {
+    mso-number-format: General;
+    text-align: general;
+    vertical-align: bottom;
+    white-space: nowrap;
+    mso-rotate: 0;
+    mso-background-source: auto;
+    mso-pattern: auto;
+    color: black;
+    font-size: 11.0pt;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-family: Calibri, sans-serif;
+    mso-font-charset: 0;
+    border: none;
+    mso-protection: locked visible;
+    mso-style-name: Normal;
+    mso-style-id: 0; }
+  .calendar-table td {
+    mso-style-parent: style0;
+    padding-top: 1px;
+    padding-right: 1px;
+    padding-left: 1px;
+    mso-ignore: padding;
+    color: black;
+    font-size: 11.0pt;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    font-family: Calibri, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: General;
+    text-align: general;
+    vertical-align: bottom;
+    border: none;
+    mso-background-source: auto;
+    mso-pattern: auto;
+    mso-protection: locked visible;
+    white-space: nowrap;
+    mso-rotate: 0; }
+  .calendar-table .xl65 {
+    mso-style-parent: style0;
+    color: black;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal; }
+  .calendar-table .xl66 {
+    mso-style-parent: style0;
+    color: white;
+    font-size: 10.0pt;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl67 {
+    mso-style-parent: style0;
+    color: gray;
+    font-size: 10.0pt;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl68 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #F2F2F2;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl69 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: #F2F2F2;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl70 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "Short Time";
+    text-align: center;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl71 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: center;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl72 {
+    mso-style-parent: style0;
+    color: windowtext;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "Short Time";
+    text-align: center;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl73 {
+    mso-style-parent: style0;
+    color: windowtext;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: center;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl74 {
+    mso-style-parent: style0;
+    color: black;
+    font-size: 22.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal; }
+  .calendar-table .xl75 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "Short Time";
+    text-align: center;
+    vertical-align: top;
+    border-top: none;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: .5pt solid #AEAAAA;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl76 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    border-top: none;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: .5pt solid #AEAAAA;
+    border-left: .5pt solid #AEAAAA;
+    background: #F2F2F2;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl77 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border-top: none;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: .5pt solid #AEAAAA;
+    border-left: none;
+    background: #F2F2F2;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl78 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    border-top: .5pt solid #AEAAAA;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: .5pt solid #AEAAAA;
+    border-left: none;
+    background: #F2F2F2;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl79 {
+    mso-style-parent: style0;
+    color: #E7E6E6;
+    font-size: 10.0pt;
+    font-weight: 700;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl80 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: gray;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl81 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    white-space: normal; }
+  .calendar-table .xl82 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #BDD7EE;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl83 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: #BDD7EE;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl84 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #F2F2F2;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl85 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #F8CBAD;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl86 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: #F8CBAD;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl87 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #FFFFCC;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl88 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: center;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: #F2F2F2;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl89 {
+    mso-style-parent: style0;
+    color: #3A3838;
+    font-size: 18.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space: normal; }
+  .calendar-table .xl90 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #FFF2CC;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl91 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #DDEBF7;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl92 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #E2EFDA;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl93 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #FCE4D6;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl94 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: #C6E0B4;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl95 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: top;
+    border-top: .5pt solid #AEAAAA;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: none;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl96 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: top;
+    border-top: none;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: .5pt solid #AEAAAA;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl97 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl98 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl99 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border-top: .5pt solid #AEAAAA;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: none;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl100 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border-top: none;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: none;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl101 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border-top: none;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: .5pt solid #AEAAAA;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl102 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl103 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl104 {
+    mso-style-parent: style0;
+    color: black;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl105 {
+    mso-style-parent: style0;
+    color: #595959;
+    font-size: 12.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: center;
+    vertical-align: middle;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl106 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    text-align: left;
+    vertical-align: top;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl107 {
+    mso-style-parent: style0;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    border: .5pt solid #AEAAAA;
+    background: #DDEBF7;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl108 {
+    mso-style-parent: style0;
+    color: windowtext;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl109 {
+    mso-style-parent: style0;
+    color: windowtext;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border-top: .5pt solid #AEAAAA;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: none;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl110 {
+    mso-style-parent: style0;
+    color: windowtext;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border-top: none;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: none;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }
+  .calendar-table .xl111 {
+    mso-style-parent: style0;
+    color: windowtext;
+    font-size: 10.0pt;
+    font-family: Arial, sans-serif;
+    mso-font-charset: 0;
+    mso-number-format: "\@";
+    text-align: center;
+    vertical-align: middle;
+    border-top: none;
+    border-right: .5pt solid #AEAAAA;
+    border-bottom: .5pt solid #AEAAAA;
+    border-left: .5pt solid #AEAAAA;
+    background: white;
+    mso-pattern: black none;
+    white-space: normal; }

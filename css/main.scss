@@ -182,73 +182,30 @@ img {
 
 // custom styles
 .calendar-table{
-    display: inline-block;
-    float: left;
-    width: 36%;
+    display: block;
+    width: 100%;
     overflow: hidden;
-    .table-heading{
-        text-align: center;
+    div{
+        display: inline-block;
+        vertical-align: top; 
     }
     table{
-        max-width: 100%;
+        border: 0;
         tr{
-            height: 45px;
             td{
-                border: 1px solid #333;
-                background: #fff;
-                width: 25%;
-                text-align: center;
-                padding: 0 5px;
-                font-size: 12px; 
+                padding: 0px; 
+                line-height: 1.1;
+                
             }
+            td:first-child{
+            padding-top: 0px;
         }
-        th{
-            text-align: center;
-            font-size: 14px;
         }
-        .time-cell{
-            vertical-align: top;
-            width: 60px;
-        }
-    }
-}
-.calendar-table.wedthur-table{
-    width:28%; 
-}
-.calendar-table.tuesday-table table{
-    border-right: 0;
-    border-left: 0;
+        
+    } 
+@import "exceltable";
 }
 
 
 
-.fim4r{
-  background-color: $fim4r !important;
-}
-.fedbc{
-  background-color: $fedbc !important;
-}
-.hub{
-  background-color: $hub !important;
-}
-.python{
-  background-color: $python !important;
-}
-.pythonextra{
-  background-color: $pythonextra !important;
-}
-.pause{
-  background-color: $pause !important;
-}
-.keynote{
-  background-color: $keynote !important;
-}
-.agenda{
-  background-color: $agenda !important;
-}
-.session{
-  background-color: $session !important;
-}
-.plenary{
-  background-color: $plenary !important;
-}
+//excel styles
