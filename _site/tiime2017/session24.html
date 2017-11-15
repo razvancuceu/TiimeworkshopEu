@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Session 24 &amp;lt;Mobile Native SSO &amp;amp; Difference between Oauth2 and OpenID-connect&amp;gt; (11:30/Room A06) (T)</title>
+  <meta name="description" content="Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+">
+
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/tether.min.css">
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/tiimeworkshop.eu/tiime2017/session24.html">
+  <link rel="alternate" type="application/rss+xml" title="TIIME" href="http://localhost:4000/tiimeworkshop.eu/feed.xml">
+</head>
+
+
+  <body>
+    
+<div class="container">
+  <div class="row">
+    <div class="float-xs-right">
+      <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+          <ul class="nav navbar-nav float-md-right">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/" class="nav-link">
+                          
+                            Home
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/topics" class="nav-link">
+                          
+                            Topics
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/tiime2017/" class="nav-link">
+                          
+                            TIIME2017
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/about" class="nav-link">
+                          
+                            About
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="jumbotron">
+    <div class="col-md-2 text-md-left text-xs-center jumbotron-logo">
+      <img src="/tiimeworkshop.eu/img/logo-head-transparent.png" alt="" width="100" height="162">
+    </div>
+    <div class="col-md-10 jumbotron-description">
+      <h2>Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+</h2>
+    </div>
+    <!--div class="col-md-3 text-md-right text-xs-center">
+      <p>In Cooperation With</p>
+      <img src="/tiimeworkshop.eu/img/sponsors/GeantLogo184x80.png" class="img-fluid" style="max-width: 100px">
+    </div-->
+  </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="blog-post">
+    
+      <h2 class="blog-post-title">Session 24 &lt;Mobile Native SSO &amp; Difference between Oauth2 and OpenID-connect&gt; (11:30/Room A06) (T)</h2>
+    
+    <p><strong>Mobile Native SSO &amp; Difference between Oauth2 and OpenID-connect</strong> <strong>(Rainer Hörbe, Mischa Salle)</strong></p>
+
+<p>There is a lot of confusion about OAuth2 vs OpenID-Connect tokens. The OAuth2 token can sometimes be used incorrectly. How to use OAuth tokens.</p>
+
+<p>The ID tokens are for encapsulating ID of a user.</p>
+
+<p>What do you do with the next step? If I have a bearer token, what do I do with it? Nothing prevents the resource from using the access token to connect to other resources.</p>
+
+<p>That's token mining. The point of it is to get tied to the TLS session.</p>
+
+<p><strong>Mischa</strong> : But then it's not a bearer token. So you are not supposed to send the access token? I personally think it's a security risk.</p>
+
+<p><strong>Uros</strong> : And if you need to go through the proxy, how would the third service refresh the session?</p>
+
+<p><strong>Mischa</strong> : It would get a new access token.</p>
+
+<p><strong>Klaas</strong> : The bottom line is when OAuth started out it was supposed to be as simple as possible, you go to the door, show the ticket and the door is opened. Stuff is pulled on top. The bearer token gets diluted to something that's not a bearer token anymore. If someone else uses that bearer token you should verify it comes from the wrong end point and refuse to accept it.</p>
+
+<p><strong>Mischa</strong> : in standard OAuth2, the client sends the access token to the RP, and the RP sends the token with the OAuth2 service to get the user info, but that latter connection cannot be bound to the token.</p>
+
+<p><strong>M</strong> : You need the information from the request otherwise you can't encrypt it. If you do pure OAuth2 you still have bearer tokens.</p>
+
+<p><strong>Peter G.</strong> : The misuse is because of the need of delegation and there had been draft 2009 on OAuth security so my question is to Leif is that there have been some attempt to define delegation in OAuth and oauth2 but they never became any final standards.</p>
+
+<p>Delegation example: https://github.com/rescrv/libmacaroons - <a href="https://dx.doi.org/10.14722/ndss.2014.23212">https://dx.doi.org/10.14722/ndss.2014.23212</a> - "Macaroons: Cookies with Contextual Caveats for Decentralized Authorization in the Cloud" ( <a href="https://research.google.com/pubs/pub41892.html">https://research.google.com/pubs/pub41892.html</a>)</p>
+
+<p>The summary is that people misuse OAuth2 bearer tokens, there is something missing, so who has the time to get into the oauth2 group? Oauth2 is on purpose vague on implementation, being high-level and generic, while OpenID connect is much more precise and detailed on the implementation.<strong>MOBILE NATIVE SSO</strong></p>
+
+<p><strong>Rainer</strong> : Providing native mobile apps with single sign on. It has been discussed for some time what are the options how to sign in. One method is to use an embedded browser that is also called web view, the other one system or captive browser. The System browser has the advantage of OS-wide security settings as opposed to the embedded browser. This advantage of the embedded browser is primarily from programmers PoV that the app is not losing control. I realized that QT5 there is a programming framework which is really portable but poorly interfacing with iOS or android. We found some practical difficulties with that. The OpenID foundation has a working group and put some code on GitHub to have a token agent. A native app would have a standardized interface available for the agent and it sounds quite like good news for me as it would lessen the burden for a native app. What is the state of the art?</p>
+
+<p><strong>Klaas</strong> : I was in the beginning of this native token app but then I moved onto doing other things.</p>
+
+<p><strong>Leif</strong> : There is a draft called ietf oauth native apps. I think it's meant to also some of this stuff.</p>
+
+<p>Reference: <a href="https://tools.ietf.org/html/draft-ietf-oauth-native-apps">https://tools.ietf.org/html/draft-ietf-oauth-native-apps</a></p>
+
+<p><a href="http://openid.net/wg/napps/">http://openid.net/wg/napps/</a></p>
+
+<p>SDK SURFnet: <a href="https://github.com/SURFnet/nonweb-sso">https://github.com/SURFnet/nonweb-sso</a>(and blog: <a href="https://blog.surf.nl/en/federated-login-to-native-applications-sdk/">https://blog.surf.nl/en/federated-login-to-native-applications-sdk/</a>)</p>
+
+<p>Embedded browsers do not usually respect privacy settings.</p>
+
+<p>From a usability PoV there is a third option now, the system can be integrated into the app so you aren't leaving the app. The app can't have any access to the cookies. It will benefit from browser sessions. There is an extension to the OAuth proof key auto exchange, there is an authorization protocol. It can perform the authorization outflow on android or apple. You don't run into the risk that someone can catch the authorization code itself. RFC 7636: <a href="https://tools.ietf.org/html/rfc7636">https://tools.ietf.org/html/rfc7636</a></p>
+
+<p>The problem is that I don't know any reference if any identity provider is already supporting it. Some are supporting the OAuth. The question is how to do SSO nowadays? This is a very good question. We have the napps, one login, we can use openid connect. What is the best approach?</p>
+
+<p><strong>Mischa</strong> : It would be good to have something where you can get a token. Now you have credentials in chrome for all different devices.</p>
+
+<p><strong>Leif</strong> : It's relatively new. TV display is like 4 PIN code. Short-lived. You can use that to provision the cross-state. It's specified as an OAuth2 cloud.</p>
+
+<p><strong>James</strong> : What's the reference on that?</p>
+
+<p>Leif: <a href="https://tools.ietf.org/html/draft-ietf-oauth-device-flow-03">https://tools.ietf.org/html/draft-ietf-oauth-device-flow-03</a></p>
+
+<p>geteduroam</p>
+
+<p><a href="https://play.google.com/store/apps/details?id=nl.nikhef.eduroam">https://play.google.com/store/apps/details?id=nl.nikhef.eduroam</a></p>
+
+<p>Src code: <a href="https://github.com/synnack/nikhef-eduroam/tree/master/android/src/nl/nikhef/eduroam">https://github.com/synnack/nikhef-eduroam/tree/master/android/src/nl/nikhef/eduroam</a></p>
+
+<p><strong>Leif</strong> : You want to write an app in a framework that enables you for the app to be able to be on multiple platforms.</p>
+
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-lg-3 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset text-sm-center">
+  <style>
+.regbutton {
+  text-decoration: none;
+  background-color: #900;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+  <h4 style="margin-top: 1.5em;">Sponsors 2017</h4>
+  <a href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html">
+    <img src="/tiimeworkshop.eu/img/sponsors/austriapro_logo_400.jpg" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://www.internetsociety.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/isoc_logo400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://sphericalcowgroup.com/">
+    <img src="/tiimeworkshop.eu/img/sponsors/scg-logo-name.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.sunet.se/about-sunet/">
+    <img src="/tiimeworkshop.eu/img/sponsors/sunet_logo_400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.technikum-wien.at/">
+    <img src="/tiimeworkshop.eu/img/sponsors/fh_technikum_wien400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://kantarainitiative.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/kantara400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://daasi.de/">
+    <img src="/tiimeworkshop.eu/img/sponsors/daasi_logo_final_400.gif" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/tether.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

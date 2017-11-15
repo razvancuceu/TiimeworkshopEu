@@ -1,0 +1,34 @@
+# Übersicht TIIME software
+
+## www.tiimeworkshop.eu
+
+- Wird aus diesem Repo über Jekyll auf github.io generiert.
+- Dynamische Inhalte werden über cronjobs aktualisert (netcup8.hoerbe.at)
+  Das ist derzeit:
+  ** Liste der Teilnehmer in registration.md, und data/registration.json, data/registration.csv
+     (event_fetcher.sh)
+- Der Cronjob wird über docker deployed: cd _docker && dscripts/build.sh
+- Um das Registration Template zu ändern, muss ein docker build ausgeführt werden.
+- Der Eventkalender ist ein eingeunderer Google Kalender vom Account rainer.hoerbe@gmail.com
+
+
+## tiime.sessiontracker.eu  (Attendee App)
+
+App für angemeldet Konferenzteilnehmer, mit folgenden Funktionen:
+
+- Session Kalender (Titel, Synopsis, Convenor(s), Raum, Zeit)
+- Link auf Note-taker shared Editor (Etherpad)
+- mail-to Link auf die Gruppenspezifische Mailingliste
+Mit der Anmeldung die dei Mailadresse auf der Meilingsliste der Session eingetragen.
+
+
+## tiime.sessiontracker.eu/sessions/notetaker  (Session Manager)
+
+Die Notetaker können Sessions einpflegen und Sessionslots (Raum/Zeit) zuordnen
+
+PW: leone.werkt
+
+## tiime.sessiontracker.eu/admin  (Verwaltung für den Session Manager)
+
+Mit dem Admin Interface werden Benutzer für den /admin und /sessions/notetaker verwaltet, sowie
+Events, Event Slots und Locations eingerichtet, damit der Kalender funktioniert.

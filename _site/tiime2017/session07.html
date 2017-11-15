@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>TIIME 2017&amp;#58; Session 7 Mapping between (e.g.) SAML &amp;amp; OIDC attributes (11:30/Room A11)</title>
+  <meta name="description" content="Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+">
+
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/tether.min.css">
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/tiimeworkshop.eu/tiime2017/session07.html">
+  <link rel="alternate" type="application/rss+xml" title="TIIME" href="http://localhost:4000/tiimeworkshop.eu/feed.xml">
+</head>
+
+
+  <body>
+    
+<div class="container">
+  <div class="row">
+    <div class="float-xs-right">
+      <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+          <ul class="nav navbar-nav float-md-right">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/" class="nav-link">
+                          
+                            Home
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/topics" class="nav-link">
+                          
+                            Topics
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/tiime2017/" class="nav-link">
+                          
+                            TIIME2017
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/about" class="nav-link">
+                          
+                            About
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="jumbotron">
+    <div class="col-md-2 text-md-left text-xs-center jumbotron-logo">
+      <img src="/tiimeworkshop.eu/img/logo-head-transparent.png" alt="" width="100" height="162">
+    </div>
+    <div class="col-md-10 jumbotron-description">
+      <h2>Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+</h2>
+    </div>
+    <!--div class="col-md-3 text-md-right text-xs-center">
+      <p>In Cooperation With</p>
+      <img src="/tiimeworkshop.eu/img/sponsors/GeantLogo184x80.png" class="img-fluid" style="max-width: 100px">
+    </div-->
+  </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="blog-post">
+    
+      <h2 class="blog-post-title">TIIME 2017&#58; Session 7 Mapping between (e.g.) SAML &amp; OIDC attributes (11:30/Room A11)</h2>
+    
+    <p><strong>Mapping between (e.g.) SAML &amp; OIDC attributes (Mischa Sallé)</strong></p>
+
+<p>Best practice - SAML – OIDC attributes/claims mapping</p>
+
+<p>Various attempts</p>
+
+<p>Started with informal group.   REFEDS mailing list archive: <a href="https://lists.refeds.org/sympa/arc/oidcre">https://lists.refeds.org/sympa/arc/oidcre</a></p>
+
+<p>Wiki page: <a href="https://wiki.refeds.org/display/GROUPS/OIDCre">https://wiki.refeds.org/display/GROUPS/OIDCre</a></p>
+
+<p>RFC working doc: <a href="https://github.com/refeds-oidcre/eduperson-jwt-claims">https://github.com/refeds-oidcre/eduperson-jwt-claims</a></p>
+
+<p>Planning/mapping spreadsheet: <a href="https://docs.google.com/spreadsheets/d/1YirGURSkivafVSZCykDuqQjKGKlUu4uHHNHTNB-n_Ic/edit">https://docs.google.com/spreadsheets/d/1YirGURSkivafVSZCykDuqQjKGKlUu4uHHNHTNB-n_Ic/edit</a></p>
+
+<p>A few people (Niels van Dijk, Jim Basney, ..) discussed this already and presented this at EWTI December 2015.</p>
+
+<p>Notes from the previous EWTI session: https://rhoerbe.github.io/wwwTiimeworkshopEu/identityworkshop.eu/past-events/ewti-2015/proceedings/18-december-2nd/102-session-18-mapping-eduperson-to-oidc-claims.html</p>
+
+<p>We have a distributed federation in the SAML world whereas OIDC does not, although some work is going on.</p>
+
+<p>Very pragmatic thing where we come up with a best-practice-recommendation in SAML. In the end it is always an implementation-choice if you do mapping.</p>
+
+<p>Markus is displaying documents from the OIDCre wiki:</p>
+
+<p><a href="https://wiki.refeds.org/display/GROUPS/Transforming+Identifiers+between+OIDC+and+SAML">https://wiki.refeds.org/display/GROUPS/Transforming+Identifiers+between+OIDC+and+SAML</a></p>
+
+<p><a href="https://wiki.refeds.org/display/GROUPS/Mapping+SAML+attributes+to+OIDC+Claims">https://wiki.refeds.org/display/GROUPS/Mapping+SAML+attributes+to+OIDC+Claims</a></p>
+
+<p><strong>Straight mapping from A to B</strong></p>
+
+<p>At the mapping "I want to make sure that it goes both ways".</p>
+
+<p>We are talking about page 24 in <a href="https://aarc-project.eu/wp-content/uploads/2016/06/MJRA1.3-Design-for-the-integration-of-an-Attribute-Management-Tool.pdf">https://aarc-project.eu/wp-content/uploads/2016/06/MJRA1.3-Design-for-the-integration-of-an-Attribute-Management-Tool.pdf</a></p>
+
+<p>It shows a mapping of eduperson to oidc attributes. Remark: sub is not scoped, but local. To be unambiguous you need to write iss+sub.</p>
+
+<p>We should define something so that anybody can participate to work on this.</p>
+
+<p>Two mapping strategies in use at the same time: map some of the basic information (should work with a basic client out-of-the-box). Next: additional profile to provide mapping to claims that have the complete set of eduPerson attributes</p>
+
+<p>Extensions for clients for advanced scenarios.</p>
+
+<p>Next we see a table. All that is yellow is problematic.</p>
+
+<p>Potential issues (Column "Remark"):</p>
+
+<p>Roland can no longer chair the REFEDS OIDCre WG, Niels Van Dijk volunteers to pick it up.</p>
+
+<p>Maarten is proposing to forward this as a strawman proposal to Nicole, and ask her to start a consultation in REFEDS. Registration can happen afterwards. Chances to have this recognized by the OCID group are low. The proposal should be limited to the R+S attribute.</p>
+
+<p>It would be nice if Nils sends a message to Nicole at the end of the session.</p>
+
+<p>First we will solve the simple mapping scenario:</p>
+
+<p>How to deal with the identifier? Red parts at the table (gender birth date…). we should be able to come up with a safe list.</p>
+
+<p>Niels' proposal for order of handling things:</p>
+
+<ol>
+  <li>Simple mapping</li>
+  <li>All (of the useful parts of) eduPerson/SCHAC</li>
+  <li>R&amp;S</li>
+</ol>
+
+<p>Double-checking of what is the 'simple mapping' list:</p>
+
+<p>-Identifier (proposal in comment from Tom Scavo on the OIDCre wiki <a href="https://wiki.refeds.org/display/GROUPS/Transforming+Identifiers+between+OIDC+and+SAML?focusedCommentId=13107203#comment-13107203">https://wiki.refeds.org/display/GROUPS/Transforming+Identifiers+between+OIDC+and+SAML?focusedCommentId=13107203#comment-13107203</a>)</p>
+
+<p><strong>The problematic attributes:</strong></p>
+
+<p>eduPersonAffiliation</p>
+
+<p>eduPersonScopedAffiliation</p>
+
+<p>eduPersonEntitlement</p>
+
+<p>We already have a global community to give feedback.</p>
+
+<p><strong>Proposal:</strong></p>
+
+<p>Everyone who wants can join the REFEDS OICDre (https://wiki.refeds.org/display/GROUPS/OIDCre) working group.</p>
+
+<p>Leif suggested to start a claims registry at IANA for having easy unambiguous handles to any OIDC/SAML/etc attribute. Actually there could be an IETF FO-working group for a couple topics, which would provide the resources for this.</p>
+
+<p>There should be an IETF-workstream. We need to write a RFC.</p>
+
+<p>Niels will be writing a proposal about what attributes to use.</p>
+
+<p>Niels will present the conclusions in the summary session.</p>
+
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-lg-3 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset text-sm-center">
+  <style>
+.regbutton {
+  text-decoration: none;
+  background-color: #900;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+  <h4 style="margin-top: 1.5em;">Sponsors 2017</h4>
+  <a href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html">
+    <img src="/tiimeworkshop.eu/img/sponsors/austriapro_logo_400.jpg" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://www.internetsociety.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/isoc_logo400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://sphericalcowgroup.com/">
+    <img src="/tiimeworkshop.eu/img/sponsors/scg-logo-name.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.sunet.se/about-sunet/">
+    <img src="/tiimeworkshop.eu/img/sponsors/sunet_logo_400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.technikum-wien.at/">
+    <img src="/tiimeworkshop.eu/img/sponsors/fh_technikum_wien400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://kantarainitiative.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/kantara400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://daasi.de/">
+    <img src="/tiimeworkshop.eu/img/sponsors/daasi_logo_final_400.gif" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/tether.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

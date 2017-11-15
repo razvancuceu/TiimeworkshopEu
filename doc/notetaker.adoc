@@ -1,0 +1,42 @@
+# Note Taker Guide
+
+## Agenda Creation
+
+Take down proposed topics pairwise and note:
+
+ - Number
+ - Session title
+ - Abstract
+ - convenor(s)
+
+Enter it into the Session Manager app:
+
+https://tiime.sessiontracker.eu/sessions/eventsessions/2
+
+## Session
+
+At the beginning
+
+- ask convenors to verify the abstract
+- ask the participants to help with note taking (a few more eyes help when talks are fast or difficult to capture)
+- ask if anyone needs help with the Attendee App
+
+When 5 minutes are left to the end of the session:
+
+- ask the group to wrap up and
+- nominate a rappoteur for the summary session
+
+Post scriptum
+
+When the session is over and people are moving to the next session or into the break,
+try to get hold of people and ask them to clarify points you missed, or ask 
+them to update contents /before/ the summary session.
+
+Also review what you have written as soon as time is available, and your memory is still fresh.
+
+## Proceedings
+
+Find proceedings from former workshops:
+
+- https://rhoerbe.github.io/wwwTiimeworkshopEu/identityworkshop.eu/past-events/ewti-2015/proceedings.html
+- https://rhoerbe.github.io/wwwTiimeworkshopEu/identityworkshop.eu/past-events/ewti-2014/session-notes.html

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Session 27 &amp;lt;Push-MDQ&amp;gt; (11:30/Plenary)</title>
+  <meta name="description" content="Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+">
+
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/tether.min.css">
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/tiimeworkshop.eu/tiime2017/session27.html">
+  <link rel="alternate" type="application/rss+xml" title="TIIME" href="http://localhost:4000/tiimeworkshop.eu/feed.xml">
+</head>
+
+
+  <body>
+    
+<div class="container">
+  <div class="row">
+    <div class="float-xs-right">
+      <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+          <ul class="nav navbar-nav float-md-right">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/" class="nav-link">
+                          
+                            Home
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/topics" class="nav-link">
+                          
+                            Topics
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/tiime2017/" class="nav-link">
+                          
+                            TIIME2017
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/about" class="nav-link">
+                          
+                            About
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="jumbotron">
+    <div class="col-md-2 text-md-left text-xs-center jumbotron-logo">
+      <img src="/tiimeworkshop.eu/img/logo-head-transparent.png" alt="" width="100" height="162">
+    </div>
+    <div class="col-md-10 jumbotron-description">
+      <h2>Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+</h2>
+    </div>
+    <!--div class="col-md-3 text-md-right text-xs-center">
+      <p>In Cooperation With</p>
+      <img src="/tiimeworkshop.eu/img/sponsors/GeantLogo184x80.png" class="img-fluid" style="max-width: 100px">
+    </div-->
+  </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="blog-post">
+    
+      <h2 class="blog-post-title">Session 27 &lt;Push-MDQ&gt; (11:30/Plenary)</h2>
+    
+    <p><strong>Push-MDQ  (Leif Johansson)</strong></p>
+
+<p><strong>Problem statement</strong></p>
+
+<p>Consider the following aggregator setup: A provides an upstream to B which provides downstreams to C and D. Changes at A take X hours to reach B and even more hours to reach C and D. We need this to go faster. One approach is to just update more often but this is wasteful and scales poorly. Instead we propose a push-based notification mechanism for metadata changes based on ATOM and PuSH</p>
+
+<p><strong>Strawman approach</strong></p>
+
+<ul>
+  <li>Each endpoint at an aggregator supporting PMDQ indicates this by permitting content negotiation for application/atom+xml in addition of the default application/samlmetadata+xml</li>
+  <li>When requesting /foo with Content-Type: application/atom+xml the aggregator will return the changes associated with /foo (subject to some reasonable TTL based on validUntil etc.).</li>
+  <li>The /entities change-feed is the "all in" change feed - contains all changes</li>
+  <li>Each object in the ATOM feed should contain a reference to signed metadata that is at least as fresh as the one that was current at the time of the change.</li>
+  <li>This 'change feed' could also implement PuSH (pubsubhubbub) in the normal way</li>
+  <li>An aggregator could implement its own PuSH hub or use an existing hub (superfeedr etc.)</li>
+</ul>
+
+<p>This leads to the following behavior associated with the example</p>
+
+<ul>
+  <li>Aggregator B fetches the ATOM change feed associated with /upstream-to-B and parses the Link header to find the pubsubhubbub H</li>
+  <li>B registers as a consumer of  http://A/upstream-to-B at H</li>
+  <li>When something happens at aggregator A to the entities in /upstream-to-B the aggregator updates the /upstream-to-B ATOM change feed and notifies H</li>
+  <li>H notifies B which can download the change feed and fetch metadata.</li>
+</ul>
+
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-lg-3 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset text-sm-center">
+  <style>
+.regbutton {
+  text-decoration: none;
+  background-color: #900;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+  <h4 style="margin-top: 1.5em;">Sponsors 2017</h4>
+  <a href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html">
+    <img src="/tiimeworkshop.eu/img/sponsors/austriapro_logo_400.jpg" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://www.internetsociety.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/isoc_logo400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://sphericalcowgroup.com/">
+    <img src="/tiimeworkshop.eu/img/sponsors/scg-logo-name.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.sunet.se/about-sunet/">
+    <img src="/tiimeworkshop.eu/img/sponsors/sunet_logo_400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.technikum-wien.at/">
+    <img src="/tiimeworkshop.eu/img/sponsors/fh_technikum_wien400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://kantarainitiative.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/kantara400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://daasi.de/">
+    <img src="/tiimeworkshop.eu/img/sponsors/daasi_logo_final_400.gif" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/tether.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

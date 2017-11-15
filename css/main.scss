@@ -1,0 +1,254 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+show_on_menu: no
+---
+@charset "utf-8";
+
+$logo-foreground-color: #3E2D0E;
+$fim4r: #23c0ff;
+$fedbc: #c8ff89;
+$hub: #ffeb89;
+$python: #ffc689;
+$pythonextra: #ffdcc1;
+$pause: #e0e0e0;
+$keynote: #ffe7d6;
+$agenda: #ffdc91;
+$session: #ffc62b;
+$plenary: #ff927f;
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting",
+        "tiime"
+;
+
+.jumbotron {
+  padding: 0px;
+  min-height: 200px;
+  h1 {
+    font-family: Optima;
+  }
+}
+.jumbotron {
+  .jumbotron-logo {
+    margin-top: 10px;
+    img {
+      margin-top: -4em;
+    }
+  }
+}
+.jumbotron-description {
+    padding-top: 20px;
+    h2{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 767px){
+  .jumbotron-description{
+    padding-top: 10px;
+  }
+  .jumbotron-description h2{
+    text-align: center;
+  }
+
+}
+@media(max-width: 992px){
+    .jumbotron-description{
+        padding-top: 12px;
+        h2 {
+        font-size: 1.2rem;
+      }
+    }
+}
+
+.about-profile-picture {
+  margin: 15px;
+  margin-bottom: 5px;
+  display: block;
+  max-width: 170px;
+  max-height: 170px;
+  width: auto;
+  height: auto;
+}
+
+.jumbotron {
+background-image: url({{'/img/background01.png' | prepend: site.baseurl}});
+background-size: cover;}
+
+.sidebar-module {
+  padding: 1rem;
+}
+.sidebar-module-inset {
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: .25rem;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+  border-radius: 2rem;
+}
+
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-title {
+  margin-bottom: .25rem;
+  color: #505050;
+  // font-size: 2.5rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #999;
+}
+
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+table {
+  background: #fff;
+  margin-bottom: 1.25em;
+  border: solid 1px #dedede
+}
+
+table thead, table tfoot {
+  background: #f7f8f7;
+  font-weight: bold
+}
+
+table thead tr th, table thead tr td, table tfoot tr th, table tfoot tr td {
+  padding: .5em .625em .625em;
+  font-size: inherit;
+  color: rgba(0, 0, 0, .8);
+  text-align: left
+}
+
+table tr th, table tr td {
+  padding: .5625em .625em;
+  font-size: inherit;
+  color: rgba(0, 0, 0, .8)
+}
+
+table tr.even, table tr.alt, table tr:nth-of-type(even) {
+  background: #eee
+}
+
+table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
+  display: table-cell;
+  line-height: 1.6
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-gallery, .photo-gallery li {
+  list-style: none;
+  padding: 0;
+}
+
+.photo-gallery li {
+  display: inline-block;
+  width: 32%;
+}
+
+.photo-gallery li img {
+  width: 100%;
+}
+
+
+
+
+
+// custom styles
+.calendar-table{
+    display: inline-block;
+    float: left;
+    width: 36%;
+    overflow: hidden;
+    .table-heading{
+        text-align: center;
+    }
+    table{
+        max-width: 100%;
+        tr{
+            height: 45px;
+            td{
+                border: 1px solid #333;
+                background: #fff;
+                width: 25%;
+                text-align: center;
+                padding: 0 5px;
+                font-size: 12px; 
+            }
+        }
+        th{
+            text-align: center;
+            font-size: 14px;
+        }
+        .time-cell{
+            vertical-align: top;
+            width: 60px;
+        }
+    }
+}
+.calendar-table.wedthur-table{
+    width:28%; 
+}
+.calendar-table.tuesday-table table{
+    border-right: 0;
+    border-left: 0;
+}
+
+
+
+.fim4r{
+  background-color: $fim4r !important;
+}
+.fedbc{
+  background-color: $fedbc !important;
+}
+.hub{
+  background-color: $hub !important;
+}
+.python{
+  background-color: $python !important;
+}
+.pythonextra{
+  background-color: $pythonextra !important;
+}
+.pause{
+  background-color: $pause !important;
+}
+.keynote{
+  background-color: $keynote !important;
+}
+.agenda{
+  background-color: $agenda !important;
+}
+.session{
+  background-color: $session !important;
+}
+.plenary{
+  background-color: $plenary !important;
+}

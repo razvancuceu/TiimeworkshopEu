@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>TIIME 2017&amp;#58; Session 13 Central but Distributed PDP build with OAuth2 (14:15/Room A07)</title>
+  <meta name="description" content="Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+">
+
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/tether.min.css">
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/tiimeworkshop.eu/tiime2017/session13.html">
+  <link rel="alternate" type="application/rss+xml" title="TIIME" href="http://localhost:4000/tiimeworkshop.eu/feed.xml">
+</head>
+
+
+  <body>
+    
+<div class="container">
+  <div class="row">
+    <div class="float-xs-right">
+      <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+          <ul class="nav navbar-nav float-md-right">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/" class="nav-link">
+                          
+                            Home
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/topics" class="nav-link">
+                          
+                            Topics
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/tiime2017/" class="nav-link">
+                          
+                            TIIME2017
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/about" class="nav-link">
+                          
+                            About
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="jumbotron">
+    <div class="col-md-2 text-md-left text-xs-center jumbotron-logo">
+      <img src="/tiimeworkshop.eu/img/logo-head-transparent.png" alt="" width="100" height="162">
+    </div>
+    <div class="col-md-10 jumbotron-description">
+      <h2>Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+</h2>
+    </div>
+    <!--div class="col-md-3 text-md-right text-xs-center">
+      <p>In Cooperation With</p>
+      <img src="/tiimeworkshop.eu/img/sponsors/GeantLogo184x80.png" class="img-fluid" style="max-width: 100px">
+    </div-->
+  </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="blog-post">
+    
+      <h2 class="blog-post-title">TIIME 2017&#58; Session 13 Central but Distributed PDP build with OAuth2 (14:15/Room A07)</h2>
+    
+    <p><strong>Central but Distributed PDP build with OAuth2 (Peter Gietz)</strong></p>
+
+<p>Central but Distributed PDP build with OAuth2 and SAML as the identity layer.</p>
+
+<p>Normal User-Browser IdP.</p>
+
+<p><strong>Pre-Requisite</strong> : SAML based Authentication</p>
+
+<p>Open RBAC (Role based access control), uses an LDAP Server as backend: Users, Roles, Permissions, Resources, and Sessions.</p>
+
+<p>The problem: Any kind of service, wants to interact with an REST API, which has some files hidden behind it.</p>
+
+<p><strong>Basic idea</strong> :</p>
+
+<p>SAML based authentication, if allowed an OAuth2 Token is created.</p>
+
+<p>"This is a bit simplified:"</p>
+
+<p>A central management, but as many access points as you want.</p>
+
+<p>You first get the authorization code and then the access code.</p>
+
+<p>"Why not just use OpenID?" The left part of the drawing could be replaced with OIDC.</p>
+
+<p>The LDAP Server can be distributed to other LDAP servers. Policy data can be distributed/high availability. The whole architecture could theoretically be distributed, has not been tested as such though.</p>
+
+<p>Access Token not bound to a specific server? Should there be different authentication services to have a failover?</p>
+
+<p>The answer to the question whether this system works as a distributed system, and the answer is physically yes, but not across different trust domains.</p>
+
+<p>Is it based on RFC 7522?</p>
+
+<p>SP –bearer assertion—&gt; OAuth2 AS</p>
+
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-lg-3 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset text-sm-center">
+  <style>
+.regbutton {
+  text-decoration: none;
+  background-color: #900;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+  <h4 style="margin-top: 1.5em;">Sponsors 2017</h4>
+  <a href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html">
+    <img src="/tiimeworkshop.eu/img/sponsors/austriapro_logo_400.jpg" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://www.internetsociety.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/isoc_logo400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://sphericalcowgroup.com/">
+    <img src="/tiimeworkshop.eu/img/sponsors/scg-logo-name.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.sunet.se/about-sunet/">
+    <img src="/tiimeworkshop.eu/img/sponsors/sunet_logo_400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.technikum-wien.at/">
+    <img src="/tiimeworkshop.eu/img/sponsors/fh_technikum_wien400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://kantarainitiative.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/kantara400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://daasi.de/">
+    <img src="/tiimeworkshop.eu/img/sponsors/daasi_logo_final_400.gif" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/tether.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

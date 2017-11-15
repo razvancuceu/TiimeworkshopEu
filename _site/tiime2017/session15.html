@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>TIIME 2017&amp;#58;  Session 15 Second Factor as a Service (14:15/Room A11)</title>
+  <meta name="description" content="Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+">
+
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/tether.min.css">
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/tiimeworkshop.eu/tiime2017/session15.html">
+  <link rel="alternate" type="application/rss+xml" title="TIIME" href="http://localhost:4000/tiimeworkshop.eu/feed.xml">
+</head>
+
+
+  <body>
+    
+<div class="container">
+  <div class="row">
+    <div class="float-xs-right">
+      <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+          <ul class="nav navbar-nav float-md-right">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/" class="nav-link">
+                          
+                            Home
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/topics" class="nav-link">
+                          
+                            Topics
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/tiime2017/" class="nav-link">
+                          
+                            TIIME2017
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/about" class="nav-link">
+                          
+                            About
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="jumbotron">
+    <div class="col-md-2 text-md-left text-xs-center jumbotron-logo">
+      <img src="/tiimeworkshop.eu/img/logo-head-transparent.png" alt="" width="100" height="162">
+    </div>
+    <div class="col-md-10 jumbotron-description">
+      <h2>Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+</h2>
+    </div>
+    <!--div class="col-md-3 text-md-right text-xs-center">
+      <p>In Cooperation With</p>
+      <img src="/tiimeworkshop.eu/img/sponsors/GeantLogo184x80.png" class="img-fluid" style="max-width: 100px">
+    </div-->
+  </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="blog-post">
+    
+      <h2 class="blog-post-title">TIIME 2017&#58;  Session 15 Second Factor as a Service (14:15/Room A11)</h2>
+    
+    <p><strong>Second Factor as a Service (Niels van Dijk)</strong></p>
+
+<p>Niels: Exploring possible scenarios for using 2nd factor as-a service (2FaaS).</p>
+
+<p>If you leave the service to the service-provider, we will get like 20 implementations. It is quite annoying for the end-user, because the user ends up with many different tokens.</p>
+
+<p>If you leave it to the IDPs, it won't happen when only a few users of the IdP need it.</p>
+
+<p>So centrally makes sense. A central proxy is a solution. But then you have central proxy it is more difficult to scale. And when multiple communities start offering 2FaaS then you end up with multiple proxies.</p>
+
+<p>One of the biggest challenge to do 2nd-factor collaborations you have to fit the identity.</p>
+
+<p>Scalability is also a main problem in 2nd-factor.</p>
+
+<p><strong>How could we apply federation to 2nd-factor?</strong></p>
+
+<p><strong>Scenario 1</strong>** :**</p>
+
+<p><strong>Second-factor-only-IdP</strong></p>
+
+<p>We create a separate IDP that authenticates just the 2nd factor of the user. The flow is that end users first authenticate at their "normal/home/1st factor" IDP and then register their get their 2nd factor at the central 2nd factor IdP. The 2nd factor IDP has a database that links the identifier of the user at their normal IDP to the identifier of the second factor.  That is where the collaborative organization comes in. We provide (centrally) a workflow to let other users vet the association between the 1st and the 2nd factor.</p>
+
+<p>IDP has a workflow so that end-user can come in and register and others can link the information.  The registration-workflow is behind an IDP so that the user can register with his own Home-IdP.</p>
+
+<p>IDP does not have to store private information, just an identifier.</p>
+
+<p>This scenario is already usable with the current software-stack (= OpenConext Stepup <a href="https://github.com/OpenConext/Stepup-Deploy">https://github.com/OpenConext/Stepup-Deploy</a>)</p>
+
+<p>What about hiding this workflow behind a SP?</p>
+
+<p>That is technically exactly what is happening.</p>
+
+<p>IDP is also an Attribute Authority (AA) and SP can request them. You can build in the same function without an AA.</p>
+
+<p>As we are storing information anyway it would be useful for SP to discover the fact that a 2nd-factor for a user is already stored.</p>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>1st factor IdPs</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ------------------
+
+  |DB linking      |
+
+  |1st F to 2nd F|
+
+  ------------------
+
+      |
+
+      |
+</code></pre></div></div>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>2nd factor IdP</td>
+      <td>——-</td>
+      <td>SP</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<table>
+  <tbody>
+    <tr>
+      <td>workflow</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Vetting</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Registration</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Now a flow-diagram is shown (cf. <a href="https://wiki.geant.org/display/gn42jra3/Identity+Assurance+Service+Attribute+Authority">https://wiki.geant.org/display/gn42jra3/Identity+Assurance+Service+Attribute+Authority</a>).</p>
+
+<p>End user tries to authenticate. The Home IdP releases the attributes, the other SP (e.g. SP1) checks the attribute and if there is a 2F-LoA-Attribute, then the Access is granted.</p>
+
+<p>If not, the AA tries to get more information. The SP1 fires a workflow where the user shall create a 2nd factor (SP2). Finally SP1 detects a 2nd-factor for the user and it gives access.</p>
+
+<p>Only difference to the first scenario described above is that this one misses user interaction.</p>
+
+<p>Why does it matter if the user has 2nd factor or not? SP actually require it. That is an authorization decision. The actual 2F authentication is not shown.</p>
+
+<p>Why is the AA actually in there? Just verify that the user is allowed to do this operation?</p>
+
+<p>The basic idea is to help both IDPs and Home-Organizations which are not able to implement a 2nd-factor-authentication-workflow.</p>
+
+<p>The AA-Query is running in background, the user does not get the chance to authenticate himself.</p>
+
+<p>Is the 2nd-IDP standalone? The idea is to have it central.</p>
+
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-lg-3 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset text-sm-center">
+  <style>
+.regbutton {
+  text-decoration: none;
+  background-color: #900;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+  <h4 style="margin-top: 1.5em;">Sponsors 2017</h4>
+  <a href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html">
+    <img src="/tiimeworkshop.eu/img/sponsors/austriapro_logo_400.jpg" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://www.internetsociety.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/isoc_logo400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://sphericalcowgroup.com/">
+    <img src="/tiimeworkshop.eu/img/sponsors/scg-logo-name.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.sunet.se/about-sunet/">
+    <img src="/tiimeworkshop.eu/img/sponsors/sunet_logo_400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.technikum-wien.at/">
+    <img src="/tiimeworkshop.eu/img/sponsors/fh_technikum_wien400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://kantarainitiative.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/kantara400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://daasi.de/">
+    <img src="/tiimeworkshop.eu/img/sponsors/daasi_logo_final_400.gif" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/tether.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

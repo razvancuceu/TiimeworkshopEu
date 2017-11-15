@@ -1,0 +1,8 @@
+.DS_Store
+.sass-cache
+.deploy
+.idea
+.jekyll-metadata
+tmp
+.site
+identityworkshop.eu

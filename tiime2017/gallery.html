@@ -1,0 +1,35 @@
+---
+layout: page
+title: TIIME 2017 Gallery
+menu: main
+images:
+  - path: /img/tiime2017gallery/DSCN3876.JPG
+    title: DSCN3876
+  - path: /img/tiime2017gallery/DSCN3897.JPG
+    title: DSCN3897
+  - path: /img/tiime2017gallery/DSCN3904.JPG
+    title: DSCN3904
+  - path: /img/tiime2017gallery/DSCN3911.JPG
+    title: DSCN3911
+  - path: /img/tiime2017gallery/DSCN3922.JPG
+    title: DSCN3922
+  - path: /img/tiime2017gallery/DSCN3932.JPG
+    title: DSCN3932
+  - path: /img/tiime2017gallery/DSCN3954.JPG
+    title: DSCN3954
+  - path: /img/tiime2017gallery/DSCN3964.JPG
+    title: DSCN3964
+  - path: /img/tiime2017gallery/IMG_1789.JPG
+    title: IMG_1789
+show_on_menu: no
+---
+
+<ul class="photo-gallery">
+  {% for image in page.images %}
+    <li>
+      <a href="{{image.path | prepend: site.baseurl}}">
+        <img src="{{image.path | prepend: site.baseurl}}" alt="{{image.title}}">
+      </a>
+    </li>
+  {% endfor %}
+</ul>

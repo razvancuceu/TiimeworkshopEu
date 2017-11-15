@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>TIIME 2017&amp;#58; Session 8 Federated Identities at the Command Line (13:30/Room A06) (T)</title>
+  <meta name="description" content="Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+">
+
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/tether.min.css">
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/tiimeworkshop.eu/tiime2017/session08.html">
+  <link rel="alternate" type="application/rss+xml" title="TIIME" href="http://localhost:4000/tiimeworkshop.eu/feed.xml">
+</head>
+
+
+  <body>
+    
+<div class="container">
+  <div class="row">
+    <div class="float-xs-right">
+      <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+          <ul class="nav navbar-nav float-md-right">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/" class="nav-link">
+                          
+                            Home
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/topics" class="nav-link">
+                          
+                            Topics
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/tiime2017/" class="nav-link">
+                          
+                            TIIME2017
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/about" class="nav-link">
+                          
+                            About
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="jumbotron">
+    <div class="col-md-2 text-md-left text-xs-center jumbotron-logo">
+      <img src="/tiimeworkshop.eu/img/logo-head-transparent.png" alt="" width="100" height="162">
+    </div>
+    <div class="col-md-10 jumbotron-description">
+      <h2>Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+</h2>
+    </div>
+    <!--div class="col-md-3 text-md-right text-xs-center">
+      <p>In Cooperation With</p>
+      <img src="/tiimeworkshop.eu/img/sponsors/GeantLogo184x80.png" class="img-fluid" style="max-width: 100px">
+    </div-->
+  </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="blog-post">
+    
+      <h2 class="blog-post-title">TIIME 2017&#58; Session 8 Federated Identities at the Command Line (13:30/Room A06) (T)</h2>
+    
+    <p><strong>Federated Identities at the Command Line (Gerben Venekamp)</strong></p>
+
+<p>The concept on how you do federal identity management, and do use the IDP. We would like to make it available to federations. A very simple web interface.</p>
+
+<p><strong>Gerben</strong> : The portal was able to create an OTP and the IOTS site was used to fetch the password and if the user was authenticated could be told. Someone started to mention co-manage later and that got me excited as a lot of things were missing from my portal, so I started using co-manage and now I am at the point where I can do SSH uploading and fetching an SSH key while granting the user access to the command line. I would like to comment and discuss the ideas about the use cases. We have a portal, SURFconext and the IDP. There is the user goes to the portal, and then to the SURFconext which then communicates with the IDP. Portal communicates with SURFconext with SAML and SURFconext to the portal with an assertion. The portal itself is connected to LDAP. SSH is able to get something from LDAP. IRODS(?) can do the same.</p>
+
+<p><strong>Jim</strong> : The picture looks very similar to what we are doing for (CILogon2) [http://www.cilogon.org/2] and we are planning to support OAuth tokens so that you can link OAuth apps also.</p>
+
+<p><strong>Gerben</strong> : You have plugins in co-manage which has its database.</p>
+
+<p><strong>Marcus</strong> : We had a very similar solution, you go to the portal and you are given an OAuth token, and then on the services that you log in with, you use LDAP. We wanted to replace the pam module, which can process the password and talk to the server which makes the token.</p>
+
+<p><strong>Gerben</strong> : One should try to do something with what is already there. You don't expect in having difficulties in getting that employed, trying to use a standard component.</p>
+
+<p><strong>Marcus</strong> : What is the user experience of it?</p>
+
+<p><strong>Gerben</strong> : One of the nice things is to have strong passwords so that you can randomly generate one. You can give users where they can type in their own passwords.</p>
+
+<p><strong>Jim</strong> : We want to generate the password for the users.</p>
+
+<p><strong>Gerben</strong> : Precisely.</p>
+
+<p><strong>Peter</strong> : Do the passwords expire?</p>
+
+<p><strong>Gerben</strong> : No, for example I think you want to have the passwords live longer but it depends. What SURFconext offers is that I can check when the user has lost an application-specific password.</p>
+
+<p><strong>Jim</strong> : don't OTPs expire straight away?</p>
+
+<p><strong>Gerben</strong> : It operates on a base of ad-hoc, 30 seconds time frame. There is a clocks-queue, you don't want to have a strict matching. If you run out of time you have to generate a new one.</p>
+
+<p><strong>Mischa</strong> : I might have missed some of the use case, but you have the SSH key uploaded now. Why would you need the password? We have a similar setup, you can use the ssh key to run specific commands.</p>
+
+<p><strong>Gerben</strong> : These people want to have application passwords. They start to understand, we want to use SSH.</p>
+
+<p><strong>Marcus</strong> : Maybe one comment on these OTP things, what we were considering is to put the access token with Openconext. There are some limitations to the password field and you can't put more than 64 characters, but in principle you can use that one and then use a different centered server.</p>
+
+<p><strong>Mischa</strong> : There was a recent RFC for mobile. If you want to get a credential in a command line, you want it to pop out in the browser and to get it back. I think there is a RFC that you can implement in other platforms. ( <a href="https://tools.ietf.org/html/draft-ietf-oauth-native-apps">https://tools.ietf.org/html/draft-ietf-oauth-native-apps</a>)</p>
+
+<p><strong>Gerben</strong> : But how do you do it with SSH? One of the things that I would like to do is to have an operator that authorizes keys.</p>
+
+<p><strong>Mischa</strong> : Ben you had this nice file with Niels.</p>
+
+<p><strong>Ben</strong> : Yes for soft federations.</p>
+
+<p><strong>Mischa</strong> : The SSH keys are managed by the commands. You have instant access. The keys are maintained by co-manage. I don't want to have to copy a key phrase, but just to have the key there and log in. If you want to have something that is password based, I would implement something with the browser to pop-up. There are plans for it.</p>
+
+<p><strong>Gerben</strong> : It's a nice idea but there is a lot of effort necessary.</p>
+
+<p><strong>Ben</strong> : Different use cases will require different solutions. SSH keys where plausible, OAuth tokens, etc, or passwords (ASPs) where no other option works.</p>
+
+<p><strong>Gerben</strong> : Any more questions?</p>
+
+<p><strong>Marcus</strong> : For SSH we have a fight, that is a slightly different flow and the focus was on deploying SSH keys, there is an instance to which you connect by Openconext for which you use SAML proxy and from there you can upload the key and then other services can subscribe to that key.</p>
+
+<p><strong>Gerben</strong> : But that's also managed then, as in who can subscribe or not.</p>
+
+<p><strong>Marcus</strong> : At that level you have people that want to subscribe to the keys. The concept that we keep for the demo and implement later is to use a mechanism whenever a user comes there, he gets the keys but he can also register and whenever the user uploads a different key and its updated in the whole structure.</p>
+
+<p><strong>Gerben</strong> : One of the things is that there is only LDAP on my drawing here, but there are usually multiple LDAPs</p>
+
+<p>(Discussion of resource allocation and management using Co-manage, started by Chris)</p>
+
+<p><strong>Gerben</strong> : You don't want to have one central LDAP so if you are going to have a really large base then you get into trouble as you have to put a lot of things into a single LDAP. If you have multiple apps then you have to set your ACL, and if it's configured correctly the application can access it with different applications.</p>
+
+<p>Co-manage should be able to work with multiple LDAPs, this is something that has to be checked.</p>
+
+<p><strong>Ben</strong> : there is a coordination step that has to happen.</p>
+
+<p><strong>Niclas</strong> : Important is that this co-manage instance, it says I have this user you should probably create it and there is a whole set of policies on the side that says if the user is allowed to go to the site. There are some legislations that you have to comply with. And then use all of this information to store in my LDAP.</p>
+
+<p><strong>Ben</strong> : In the model that you are describing you throw some stuff over the wall and then the system decides what to do with them.</p>
+
+<p><strong>Niclas</strong> : This is just an idea.</p>
+
+<p><strong>Chris</strong> : you don't do anything from that on your side?</p>
+
+<p><strong>Jim</strong> : Succeed has its own system and user database.</p>
+
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-lg-3 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset text-sm-center">
+  <style>
+.regbutton {
+  text-decoration: none;
+  background-color: #900;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+  <h4 style="margin-top: 1.5em;">Sponsors 2017</h4>
+  <a href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html">
+    <img src="/tiimeworkshop.eu/img/sponsors/austriapro_logo_400.jpg" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://www.internetsociety.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/isoc_logo400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://sphericalcowgroup.com/">
+    <img src="/tiimeworkshop.eu/img/sponsors/scg-logo-name.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.sunet.se/about-sunet/">
+    <img src="/tiimeworkshop.eu/img/sponsors/sunet_logo_400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.technikum-wien.at/">
+    <img src="/tiimeworkshop.eu/img/sponsors/fh_technikum_wien400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://kantarainitiative.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/kantara400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://daasi.de/">
+    <img src="/tiimeworkshop.eu/img/sponsors/daasi_logo_final_400.gif" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/tether.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

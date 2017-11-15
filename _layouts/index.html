@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% for post in site.posts %}
+  <div class="blog-post">
+      <a href="{{post.url | prepend: site.baseurl}}"><h2 class="blog-post-title">{{post.title}}</h2></a>
+      <hr>
+      {{ post.content }}
+  </div>
+{% endfor %}

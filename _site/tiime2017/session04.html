@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>TIIME 2017&amp;#58; Session 4 Attribute Aggregation (11:30/Room A06)</title>
+  <meta name="description" content="Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+">
+
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/tether.min.css">
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/tiimeworkshop.eu/tiime2017/session04.html">
+  <link rel="alternate" type="application/rss+xml" title="TIIME" href="http://localhost:4000/tiimeworkshop.eu/feed.xml">
+</head>
+
+
+  <body>
+    
+<div class="container">
+  <div class="row">
+    <div class="float-xs-right">
+      <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+          <ul class="nav navbar-nav float-md-right">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/" class="nav-link">
+                          
+                            Home
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/topics" class="nav-link">
+                          
+                            Topics
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/tiime2017/" class="nav-link">
+                          
+                            TIIME2017
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/about" class="nav-link">
+                          
+                            About
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="jumbotron">
+    <div class="col-md-2 text-md-left text-xs-center jumbotron-logo">
+      <img src="/tiimeworkshop.eu/img/logo-head-transparent.png" alt="" width="100" height="162">
+    </div>
+    <div class="col-md-10 jumbotron-description">
+      <h2>Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+</h2>
+    </div>
+    <!--div class="col-md-3 text-md-right text-xs-center">
+      <p>In Cooperation With</p>
+      <img src="/tiimeworkshop.eu/img/sponsors/GeantLogo184x80.png" class="img-fluid" style="max-width: 100px">
+    </div-->
+  </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="blog-post">
+    
+      <h2 class="blog-post-title">TIIME 2017&#58; Session 4 Attribute Aggregation (11:30/Room A06)</h2>
+    
+    <p><strong>Attribute Aggregation (Thijs Kinkhorst)</strong></p>
+
+<p><strong>Synopsis</strong> :  <em>Project about implementing a proxy to handle user attributes that belong to multiple service providers easier.</em></p>
+
+<p><strong>Thijs</strong> : There are several steps that have to be done. One is how to release the attributes and we have two options or we get the proxy. We kind of tried both approaches as both have advantages and disadvantages. With attributes it's easy to prioritize, but the SP can read the information. This is the model that we can use in our university because the servers are trusted. For outside we are trying to employ a proxy model.</p>
+
+<p><strong>Femke</strong> : With the consent we are trying to implement a good solution, where we show the user and we want to release these attributes, and the user can approve it, deny or check the box don't ask me ever again. Most said 'never ask me again'. You have the consent from users and they are happy.</p>
+
+<p><strong>Slavek</strong> : If you have the proxy solution the attribute authority needs to entrust that this proxy will indeed be the only querying.</p>
+
+<p><strong>Thijs</strong> : We can register users outside of the organization, the users come and we store them in our system. We store them when they come the first time.</p>
+
+<p><strong>Slavek</strong> : That might prompt your question, how do you know that the attributes change?</p>
+
+<p><strong>Thijs</strong> : We don't know about the change immediately, but we can later then choose, it's okay for users to renew the membership after a year. If there are some special requirements, you can shorten the period, or you can renew the membership once a month for sensitive data.</p>
+
+<p><strong>Slavek</strong> : When you start a virtual machine, the user doesn't need to log in to utilize it.</p>
+
+<p><strong>Thijs</strong> : We had the same challenge with SSH, the user logs into a portal. One solution would be to have an emergency procedure that you can just call a number and someone will disable it. Might also be sufficient based on how many times you expect this to happen. It's fine if it happens once a month, and the user is not compromised on a daily basis.</p>
+
+<p><strong>Slavek</strong> : the expiration of the users is the issue and they can still run virtual machines with SSH and you need to think out of the box.</p>
+
+<p><strong>Thijs</strong> : What happens if user is logged in at 5 different service providers, what do we do?</p>
+
+<p><strong>Slavek</strong> : You just wait for it to expire, after 10 hours for example.</p>
+
+<p><strong>Thijs</strong> : It is a challenge because we are adding more and more service providers, we can call them now and say it's compromised, but it's too many it's hard to call everyone.</p>
+
+<p><strong>Femke</strong> : There is a difference if you have the ORCID ID which you can cash for a long time or attributes which should be live for when you check the attribute if they are still there.</p>
+
+<p><strong>Raluca</strong> : Lady from ORCID said how other people are doing it, they integrate their ID in their systems.</p>
+
+<p><strong>Femke</strong> : We are not only thinking about attribute queries but we can use OIDC.</p>
+
+<p><strong>Thijs</strong> : That's the nice thing about it, we can have different back-ends</p>
+
+<p><strong>Raluca</strong> : Everyone dreams of different back-ends.</p>
+
+<p><strong>Thijs</strong> : If we are dreaming, this is the first step to add more information. At least in our world and that's it and we are trying to make a new step here but if you look at it, it's the other way around, any attributes might come from a different source. The fact that I am an employee at university X will be queried from university x. It will say I am a student there or that I am associated with this faculty so they will not have passwords. Students are very mobile; they are not interested in 5 different accounts in 5 different universities.</p>
+
+<p><strong>Slavek</strong> : I think it's doable in your federation. You have the proxy and if the university is willing to provide you with attributes, you are half way done.</p>
+
+<p><strong>Thijs</strong> : They think that it's fine, we thought they would be protective. They were okay as they said that their core business is not managing these identities. I think it's already too difficult.</p>
+
+<p><strong>Femke</strong> : There are other problems and if you have an account on two universities, some students are enrolled in three unis because of one course together and I don't think it's the way it should be, it should be one identity or a number where you can recognize the user.</p>
+
+<p><strong>Thijs</strong> : That's one of the big challenges. We talked about eIDs and it looks like that this is a solution to our problem, so I use my password to enroll at university and I get a card from the university that opens the doors. You don't have to go with your password to the desk anymore, you just use your eID. It will be good for daily use. What are you trying to accomplish?</p>
+
+<p><strong>Raluca</strong> : So basically we are piloting ideas from ESA. They have attributes from different products. They are going to divide their system in communities and they should rely on the same authority. They were looking how everybody has done it. We have talked about the authority but it's still a matter if its fits. If you are talking about different technologies its aggregation as well and how you are going to manage but my idea is proxy.</p>
+
+<p><em>ALL AGREE</em></p>
+
+<p>I am curious as well how they did it from the technological point of view.</p>
+
+<p><strong>Thijs</strong> : As we already approve the concept, our federation has a big proxy in the middle, we are simply augmenting our proxy with it. It's only a proof concept that works and it's not production ready already or scalable. We currently have about 70 million login a year, they all pass through the proxy.</p>
+
+<p><strong>Femke</strong> : When it gets slower, what are we going to do?</p>
+
+<p><strong>Thijs</strong> : That's also one of the challenges, not all offers millions of logins, but have already aggregated attributes. Maybe it will be different later. Now if we look at ORCID, it will probably be 10 or 20 people per uni. When the server needs ORCID attributes, we will send the user to ORCID. So basically it's in the target service provider.</p>
+
+<p><strong>Femke</strong> : I think with approval of concept the user goes there and link the ORCID account but we don't think it's user friendly, so we hope that we can do it within the flow or use the same identifier.</p>
+
+<p><strong>Thijs</strong> : I think that if we have the same identifier, probably they already know each other. At least in our current scheme. If our attributes also know this, then there has already been interaction. The other alternative is that the user indicates who he is and that it's possible to pre-enroll people for access.</p>
+
+<p><strong>Raluca</strong> : If it can get the country from another part then why should I store it?</p>
+
+<p><strong>Thijs</strong> : We are trying to reduce the amount of information that we store.</p>
+
+<p><strong>Slavek</strong> : If you get different information from multiple sources, can you check it somehow with some algorithms?</p>
+
+<p><strong>Thijs</strong> : IDP is the most trusted source but if it doesn't have it, you can invert, if the attribute authority knows it and other doesn't, it can simply discard it.</p>
+
+<p><strong>Femke</strong> : Some attributes have more values or you can ask the user what attribute you want.</p>
+
+<p><strong>Thijs</strong> : In an ORCID case, if you have two ORCIDs, it doesn't make too much sense, as it's a single identifier which is multivalued.</p>
+
+<p><strong>Raluca</strong> : I think there will be many answers at ORCID.</p>
+
+<p><strong>Thijs</strong> : It's the first use case that we want to explore. We know SPs. It's a much bigger problem than ORCID. We have more use cases with ORCID, but we also have questions there. Some of our providers want the memberships so that they can use AOL to ask for memberships, but when someone has more than a hundred group memberships, and they should be available for the group providers. We also have to think about it.</p>
+
+<p><strong>Slavek</strong> : you are trying to implement a solution for some use cases, there are SPs and you can dial which group can access which SP and it provides specific information to the SPs.</p>
+
+<p><strong>Thijs</strong> : It of course has the drawback because the sides need to know about each other, and you know to know beforehand, so it's for some use cases but not all.</p>
+
+<p><strong>Slavek</strong> : it works quite well if they do know each other though.</p>
+
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-lg-3 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset text-sm-center">
+  <style>
+.regbutton {
+  text-decoration: none;
+  background-color: #900;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+  <h4 style="margin-top: 1.5em;">Sponsors 2017</h4>
+  <a href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html">
+    <img src="/tiimeworkshop.eu/img/sponsors/austriapro_logo_400.jpg" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://www.internetsociety.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/isoc_logo400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://sphericalcowgroup.com/">
+    <img src="/tiimeworkshop.eu/img/sponsors/scg-logo-name.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.sunet.se/about-sunet/">
+    <img src="/tiimeworkshop.eu/img/sponsors/sunet_logo_400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.technikum-wien.at/">
+    <img src="/tiimeworkshop.eu/img/sponsors/fh_technikum_wien400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://kantarainitiative.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/kantara400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://daasi.de/">
+    <img src="/tiimeworkshop.eu/img/sponsors/daasi_logo_final_400.gif" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/tether.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>TIIME</title>
+  <meta name="description" content="Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+">
+
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/tether.min.css">
+  <link rel="stylesheet" href="/tiimeworkshop.eu/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/tiimeworkshop.eu/tiime2017/session31.html">
+  <link rel="alternate" type="application/rss+xml" title="TIIME" href="http://localhost:4000/tiimeworkshop.eu/feed.xml">
+</head>
+
+
+  <body>
+    
+<div class="container">
+  <div class="row">
+    <div class="float-xs-right">
+      <nav class="navbar navbar-dark bg-inverse">
+        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-toggleable-sm" id="navbarResponsive">
+          <ul class="nav navbar-nav float-md-right">
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/" class="nav-link">
+                          
+                            Home
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/topics" class="nav-link">
+                          
+                            Topics
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/schedule" class="nav-link">
+                          
+                            Schedule
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/tiime2017/" class="nav-link">
+                          
+                            TIIME2017
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+              
+            
+              
+                
+                  
+                    <li class="nav-item">
+                      <a href="/tiimeworkshop.eu/about" class="nav-link">
+                          
+                            About
+                          
+                        </a>
+                    </li>
+                  
+                
+              
+            
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</div>
+
+  <div class="container">
+  <div class="jumbotron">
+    <div class="col-md-2 text-md-left text-xs-center jumbotron-logo">
+      <img src="/tiimeworkshop.eu/img/logo-head-transparent.png" alt="" width="100" height="162">
+    </div>
+    <div class="col-md-10 jumbotron-description">
+      <h2>Trust and Internet Identity Meeting Europe<br> 5.-8. Feb. 2018<Br> Workshops and Unconference
+</h2>
+    </div>
+    <!--div class="col-md-3 text-md-right text-xs-center">
+      <p>In Cooperation With</p>
+      <img src="/tiimeworkshop.eu/img/sponsors/GeantLogo184x80.png" class="img-fluid" style="max-width: 100px">
+    </div-->
+  </div>
+</div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 blog-main">
+          <div class="blog-post">
+    
+      <h2 class="blog-post-title"></h2>
+    
+    <p><strong>SAML Proxy Options (Mads, Rainer)</strong></p>
+
+<p><strong>First half</strong></p>
+
+<p><strong>Mads</strong> : This is a double proxy tool. We ended up in a hub. We discovered we had a problem with what we call a double discovery when you go into eduGain you had to select wave and the real IP behind wave. The next problem was that problem that the entity was not the customer and they wanted to have another entity. We make proxies and then send all the proxies into gain and now you can have one customer per entity and the customer selecting the IDP.</p>
+
+<p>You can say that we have a mesh federation on the inside.</p>
+
+<p><strong>Mads</strong> : It's a political decision and not a technical one. We need to be able to say to our SPs if you want to be in eduGain with a wise connection just tell us and make a check in the registry then you are in eduGain. So the idea is that instead of operating one hub we are operating two, five, and all.</p>
+
+<p><strong>Rainer</strong> : but you could do it with a single hub?</p>
+
+<p><strong>Mads</strong> : No.  The idea is to easily connect to the hub. The point is that the SPs can connect to us and just be made available to the eduGain community.</p>
+
+<p><strong>Rainer</strong> : So what do you do with the endpoints, does a proxy re-write the endpoint addresses?</p>
+
+<p><strong>Mads:</strong> You can expose each service as an individual service with an arc.</p>
+
+<p><strong>Rainer</strong> : Why would the IDP still have an arrangement?</p>
+
+<p><strong>Mads</strong> : It's much easier for them. It's easier to connect to one end point. We couldn't get people to install SIP at that time, so everybody used SAML. But the wave is fully SAML and the other things can be OIDC.<strong>Second half</strong></p>
+
+<p><strong>Rainer</strong> : As I mentioned there are a couple of use cases to deploy SAML proxies. A mesh federation has a legacy protocol. The Dutch federation has collected some selected use cases. We have 20 use cases in a government project where you have to pay the IPD per SP; so if you proxy many apps with a single SP you are saving lots of money. We are doing the reverse of what you are doing, slashing expenses. Then our citizen eID scheme is conformant, it accepts various country credentials. We don't understand why. On the national side it's just talking SAML. To integrate into an IDP with various authentication methods it would be impossible to just integrate our national eID SAML as a SAML proxy. Then we have the use case of hub and spoke as I understand in Netherlands as well as Denmark where it's much cheaper to integrate many SPs in a hub and spoke than a mesh model. Would you agree that these are the main generic use cases for proxies? Protocol conversion, H+S, integrating other authentication methods.</p>
+
+<p><strong>Leif</strong> : There is at least one working by using a double proxy set up for doing a double blind. You don't actually get any privacy by doing double blind. They did end to end crypto of all attributes. They did a plugin and a handshake that you used to do for establishments and then you encrypt the attribute not hop by hop but all the way.</p>
+
+<p><strong>Rainer</strong> : Good point.</p>
+
+<p>Did you use something like a connection between the…?</p>
+
+<p><strong>Leif</strong> : No it was only used for encrypting the attribute back. It all looked like one attribute. I can't remember the details.</p>
+
+<p><strong>R</strong> : I think that's the only sensible version as you need an attribute container. You need an attribute format which is not SAML specific. Wrap it as Verifyable Claim in a SAML attribute and forget about the SAML attribute structure.</p>
+
+<p>We have now collected 4 major use cases and a long list of products which do proxies. So what I wrote on the top of my head are Corto, Gluu, larpe, Shibboleth, SSP, WSo2, ZXid.</p>
+
+<p><strong>Scott</strong> : In common is that a lot of people that want to use OAUTH, a hosted service that will translate in between SAML and OIDC.</p>
+
+<p><strong>Mads</strong> : Corto is a kind of pseudo code. It was "spiefeger" or so I thought. Then the SURFnet came to corto and it was kind of the basis of the interblock for a few years. It had a funny development history. The first version was for the BX services. So it was just as a mass proxy and using something we called meaningless URs. The problem with that and with others is that they are kinda too much. So the newest one that I made is a massive library where you have an API and you make your proxy by coining your library.</p>
+
+<p>What are the key use cases for SATOSA?</p>
+
+<p><strong>Scott</strong> : we will release SATOSA for an astronomic project in Australia and China.</p>
+
+<p><strong>Rainer</strong> : There is a Shibboleth-based proxy project at CSC in Finland.</p>
+
+<p><strong>Henri</strong> : So if you download Shib IDP you can't use it as a proxy by default but we developed all kinds of identifications including plugins as a part of a project called MPASS and it's a system towards services who want to authenticate their school pupils and teachers. Usually they exist in directories ran by municipalities. We haven't implemented all possible plugins.</p>
+
+<p><strong>Rainer</strong> : this is a SP-IDP combination or an extension of an IDP?</p>
+
+<p><strong>Henri</strong> : it's an extension of the IDP. Source code exists at: <a href="https://github.com/Digipalvelutehdas/MPASSid-proxy">https://github.com/Digipalvelutehdas/MPASSid-proxy</a></p>
+
+<p><strong>In a nutshell: we came up with 5 general use cases for SAML proxies</strong></p>
+
+<ol>
+  <li>Protocol conversion</li>
+  <li>Aggregating IDPs and SPs</li>
+  <li>Easy of deployment and operation (H+S federation)</li>
+  <li>Double blind proxies</li>
+  <li>Augmenting assertions with attributes from local VOs</li>
+</ol>
+
+</div>
+        </div><!-- /.blog-main -->
+        <div class="col-lg-3 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset text-sm-center">
+  <style>
+.regbutton {
+  text-decoration: none;
+  background-color: #900;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0.5em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+</style>
+
+  <h4 style="margin-top: 1.5em;">Sponsors 2017</h4>
+  <a href="https://www.wko.at/Content.Node/AUSTRIAPRO/Startseite---AUSTRIAPRO.html">
+    <img src="/tiimeworkshop.eu/img/sponsors/austriapro_logo_400.jpg" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://www.internetsociety.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/isoc_logo400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="http://sphericalcowgroup.com/">
+    <img src="/tiimeworkshop.eu/img/sponsors/scg-logo-name.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.sunet.se/about-sunet/">
+    <img src="/tiimeworkshop.eu/img/sponsors/sunet_logo_400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://www.technikum-wien.at/">
+    <img src="/tiimeworkshop.eu/img/sponsors/fh_technikum_wien400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://kantarainitiative.org/">
+    <img src="/tiimeworkshop.eu/img/sponsors/kantara400.png" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+  <a href="https://daasi.de/">
+    <img src="/tiimeworkshop.eu/img/sponsors/daasi_logo_final_400.gif" class="img-fluid img-thumbnail" style="margin: 0.5em 0">
+  </a>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/tether.min.js"></script>
+<script type="text/javascript" src="http://localhost:4000/tiimeworkshop.eu/js/bootstrap.min.js"></script>
+
+  </body>
+
+</html>
