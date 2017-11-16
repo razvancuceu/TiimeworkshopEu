@@ -5946,33 +5946,96 @@ img {
     mso-pattern: black none;
     white-space: normal; }
 
-.topics-list .post .featured-image {
-  position: relative;
-  margin-bottom: 1.25rem; }
-  .topics-list .post .featured-image img {
-    width: 100%;
-    height: auto; }
-  .topics-list .post .featured-image .featured-category {
-    position: absolute;
-    top: 10px;
-    left: 5px;
-    background: #fff;
-    text-transform: uppercase;
-    padding: 3px 15px;
-    font-size: 12px; }
-    .topics-list .post .featured-image .featured-category:before {
-      content: '';
-      background: pink;
-      width: 10px;
-      display: inline-block;
+.topics-list .post {
+  width: 30%;
+  float: left;
+  display: inline-block;
+  margin: 10px 10px 30px 10px; }
+  .topics-list .post a {
+    color: #404040; }
+  .topics-list .post .featured-image {
+    position: relative;
+    margin-bottom: 1.25rem; }
+    .topics-list .post .featured-image img {
+      width: 100%;
+      height: auto; }
+    .topics-list .post .featured-image .featured-category {
       position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      -webkit-transition: width 0.25s cubic-bezier(0.86, 0, 0.07, 1);
-      transition: width 0.25s cubic-bezier(0.86, 0, 0.07, 1); }
-    .topics-list .post .featured-image .featured-category:hover:before {
-      width: 100%; }
-.topics-list .post h3.title {
-  color: #404040;
-  font-size: 20px; }
+      top: 10px;
+      left: 5px;
+      background: #fff;
+      text-transform: uppercase;
+      padding: 3px 15px;
+      font-size: 12px;
+      z-index: 2; }
+      .topics-list .post .featured-image .featured-category span.bkg {
+        content: '';
+        background: pink;
+        width: 10px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        -webkit-transition: width 0.25s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: width 0.25s cubic-bezier(0.86, 0, 0.07, 1);
+        z-index: 5; }
+      .topics-list .post .featured-image .featured-category:hover span.bkg {
+        width: 100%; }
+      .topics-list .post .featured-image .featured-category.architecture span.bkg {
+        background: #510c76; }
+      .topics-list .post .featured-image .featured-category.authentication span.bkg {
+        background: #d3002d; }
+      .topics-list .post .featured-image .featured-category.business span.bkg {
+        background: #57567d; }
+      .topics-list .post .featured-image .featured-category.federation span.bkg {
+        background: #008fbf; }
+      .topics-list .post .featured-image .featured-category.opensource span.bkg {
+        background: #001689; }
+      .topics-list .post .featured-image .featured-category.policyassurance span.bkg {
+        background: #66a5d2; }
+      .topics-list .post .featured-image .featured-category.privacy span.bkg {
+        background: #2db98c; }
+      .topics-list .post .featured-image .featured-category.protocols span.bkg {
+        background: #5cb92d; }
+      .topics-list .post .featured-image .featured-category.security span.bkg {
+        background: #b9612d; }
+      .topics-list .post .featured-image .featured-category span.text {
+        z-index: 9999;
+        color: #404040;
+        position: relative;
+        -webkit-transition: width 0.25s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: width 0.25s cubic-bezier(0.86, 0, 0.07, 1); }
+      .topics-list .post .featured-image .featured-category:hover span.text {
+        color: #fff; }
+  .topics-list .post h3.title {
+    font-size: 20px; }
+    .topics-list .post h3.title a {
+      color: #404040;
+      text-decoration: none; }
+  .topics-list .post .entry {
+    font-size: 14px;
+    line-height: 1.3;
+    text-align: left; }
+    .topics-list .post .entry a {
+      color: #404040;
+      text-decoration: none; }
+
+@media (min-width: 768px) {
+  .topics-list .post:nth-child(3n+1) {
+    clear: both; } }
+@media (max-width: 767px) {
+  .topics-list .post {
+    width: calc(50% - 20px); }
+    .topics-list .post:nth-child(2n+1) {
+      clear: both; } }
+@media (max-width: 449px) {
+  .topics-list .post {
+    width: 100%;
+    float: none;
+    display: block;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto; }
+    .topics-list .post:nth-child(1n+1) {
+      clear: both; } }

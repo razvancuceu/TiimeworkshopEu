@@ -6,92 +6,157 @@
 </description>
     <link>http://localhost:4000/TiimeworkshopEu/</link>
     <atom:link href="http://localhost:4000/TiimeworkshopEu/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 16 Nov 2017 11:54:54 +0200</pubDate>
-    <lastBuildDate>Thu, 16 Nov 2017 11:54:54 +0200</lastBuildDate>
+    <pubDate>Thu, 16 Nov 2017 14:06:16 +0200</pubDate>
+    <lastBuildDate>Thu, 16 Nov 2017 14:06:16 +0200</lastBuildDate>
     <generator>Jekyll v3.6.2</generator>
     
       <item>
-        <title>Connecting Professionals Across Sectors</title>
-        <description>&lt;p&gt;At this conference people are working towards a better understanding and developing new concepts, 
-using an agile format with participant-driven contents, covering the attendees’ current interests. 
-TIIME’s format has been designed for solving trust and identity issues. If you 
-are looking for a substantial discussion on this subject it is likely that you will meet the right 
-people here!&lt;/p&gt;
-
-&lt;p&gt;Sessions will be run in an agile format centering the subtopics on the actual interests 
-of the participants. Interest, questions or contributions can be posted in the pre-conference survey.
-Each day starts with &lt;a href=&quot;keynotes2017.html&quot;&gt;keynotes&lt;/a&gt; to inspire the discussions.&lt;/p&gt;
-
-&lt;h4 id=&quot;authentication-attributes-federation-and-crypto&quot;&gt;Authentication, Attributes, Federation and Crypto&lt;/h4&gt;
-
-&lt;p&gt;Identity federation has been thriving in certain vertical domains and is increasingly arriving in various 
-industry sectors to support ever more business processes. Organizations have to choose from different 
-functions, architectures and protocols; available as cloud service, drop-in solution or toolkits. This 
-topic is for you if SAML, OAUTH, OpenID Connect, WS-Fed, SCIM, SPML should match with authentication and 
-provisioning processes in a multi-party context.&lt;/p&gt;
-
-&lt;h4 id=&quot;privacy-and-identity&quot;&gt;Privacy and Identity&lt;/h4&gt;
-
-&lt;p&gt;While “better” identities like Facebook’s real names or government issued eIDs relieve certain security 
-threats, they are against certain privacy principles and result in a shifted risk equation. What are the 
-positions, options and best practices for actors in this ecosystem, joining different jurisdictions across 
-the Internet?&lt;/p&gt;
-
-&lt;h4 id=&quot;assurance-business-cases-policy-and-governance&quot;&gt;Assurance, Business Cases, Policy and Governance&lt;/h4&gt;
-
-&lt;p&gt;Legal and organizatonal frameworks need to evolve to make corss-organizational cooperation scalable and
-resilient. Stakeholdes with different points of view need to articulare legal opinions, local vs.
-common needs, organitational contraints and contrast differnt models.&lt;/p&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;h2 id=&quot;time-location--cost&quot;&gt;Time, Location &amp;amp; Cost&lt;/h2&gt;
-
-&lt;p&gt;The next TIIME series will take place 5.-8. February 2017 in Vienna, Austria.&lt;/p&gt;
-
-&lt;style&gt;
-  .datagrid table { border-collapse: collapse; text-align: left; width: 50%; }
-  .datagrid {background: #fff; overflow: hidden; border: 1px solid #8C8C8C; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
-  .datagrid table td,
-  .datagrid table th { padding: 3px 10px; }
-  .datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #8C8C8C), color-stop(1, #7D7D7D) );background:-moz-linear-gradient( center top, #8C8C8C 5%, #7D7D7D 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8C8C8C', endColorstr='#7D7D7D');background-color:#8C8C8C; color:#FFFFFF; font-size: 15px; font-weight: normal; border-left: 1px solid #A3A3A3; }
-  .datagrid table thead th:first-child { border: none; }
-  .datagrid table tbody td { color: #7D7D7D; border-left: 1px solid #DBDBDB;font-size: 12px;font-weight: normal; }
-  .datagrid table tbody .alt td { background: #EBEBEB; color: #7D7D7D; }
-  .datagrid table tbody td:first-child { border-left: none; }
-  .datagrid table tbody tr:last-child td { border-bottom: none; }
-&lt;/style&gt;
-
-&lt;div class=&quot;datagrid&quot;&gt;&lt;table&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-    &lt;td&gt;5.-6. Feb. 2018&lt;/td&gt;
-    &lt;td&gt;Workshops and Presentations&lt;/td&gt;
-    &lt;td&gt;free&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr class=&quot;alt&quot;&gt;
-    &lt;td&gt;7.-8. Feb. 2018&lt;/td&gt;
-    &lt;td&gt;Open Space&lt;/td&gt;
-    &lt;td&gt;250/300&amp;euro;&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;&lt;/div&gt;
-
-&lt;p&gt;Contact: office@identinetics.com&lt;/p&gt;
+        <title>Son-of-IAF (2017)</title>
+        <description>&lt;p&gt;Kantara IAF reloaded: How can the IAF be profiled and tailored to specific needs? E.g. there should not be restrictions on organizations submitting their own assessment rules, if their consumers accept it, because it is expensive to get third party assessments. Next steps: continue discussion at the Internet2 Global Summit.&lt;/p&gt;
 </description>
-        <pubDate>Sun, 23 Oct 2016 00:00:00 +0300</pubDate>
-        <link>http://localhost:4000/TiimeworkshopEu/2016/10/23/connecting-business-government-research-and-education.html</link>
-        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/2016/10/23/connecting-business-government-research-and-education.html</guid>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/son-of-iaf-2017.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/son-of-iaf-2017.html</guid>
         
+        
+        <category>topic</category>
+        
+        <category>topics</category>
         
       </item>
     
       <item>
-        <title>My first post</title>
-        <description>&lt;p&gt;At this conference people are working towards a better understanding and developing new concepts.&lt;/p&gt;
+        <title>SAML Proxy Options (2017)</title>
+        <description>&lt;p&gt;There are a couple of use cases for SAML-to-SAML proxies, such as Hub-and-Spoke Federations, double blinding, aggregation of IDPs and SPs, cross federation with eID systems and adding local attributes in virtual organizations.&lt;/p&gt;
 </description>
-        <pubDate>Fri, 06 Apr 2012 21:35:00 +0300</pubDate>
-        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2012/04/06/connecting-business-government-research-and-education.html</link>
-        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2012/04/06/connecting-business-government-research-and-education.html</guid>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/saml-proxy-options-2017.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/saml-proxy-options-2017.html</guid>
+        
+        
+        <category>topic</category>
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>Privacy by Design (2017)</title>
+        <description>&lt;p&gt;Non-technical discussion about privacy by design. Reason and Background of the topic: At ORCID were talks about how to build a concept of trust. How to build this value system into the features, workflows, work with the community.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/privacy-by-design-2017.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/privacy-by-design-2017.html</guid>
+        
+        
+        <category>topic</category>
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>Multi Factor/Strong Authentication (2017)</title>
+        <description>&lt;p&gt;The diversity of authentication mechanism can be challenging. While no-so-strong approaches have show limited success because of easy-of-use considerations, the security-UX tradeoff is not the only one, as the example of the Google Authenticator shows.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/multi-factor-strong-authentication-2017.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/multi-factor-strong-authentication-2017.html</guid>
+        
+        
+        <category>topic</category>
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>Letsencrypt.org for OV + EV certificates (2014)</title>
+        <description>&lt;p&gt;How to use OV/EV certificates, obstacles and alternatives&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/letsencryptorg-for-ov-ev-certificates-2014.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/letsencryptorg-for-ov-ev-certificates-2014.html</guid>
+        
+        
+        <category>topic</category>
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>&amp;quot;Free&amp;quot;, &amp;quot;Freemium&amp;quot; and Paid Services (2017)</title>
+        <description>&lt;p&gt;There are services which state they are free, but “if you are not paying for something, then you are the product”.
+Then there are services, which have premium setting, where you are just not seeing ads but that most likely sell your data anyway.
+And then there are services where you pay, and your data is sold and someone else who is profiled similar to you is seeing the ads.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/free-freemium-and-paid-services-2017.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/free-freemium-and-paid-services-2017.html</guid>
+        
+        
+        <category>topic</category>
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>Federations within Federations: Enabling Local/Ad Hoc Policy Spheres (2014)</title>
+        <description>&lt;p&gt;Use cases: (1) How to add additional policy on top of exiting federation (this could be state fed’s) (2) Different policies could pertain to privacy, news, (3) Pick out specific Service provides that are suited for a group of IdPs; (4) Specific IdPs certificated to be able to be AuthN providers for GOV, (this is the FICAM program);&lt;/p&gt;
+
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/federations-within-federations-enabling-local-ad-hoc-policy-spheres-2014.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/federations-within-federations-enabling-local-ad-hoc-policy-spheres-2014.html</guid>
+        
+        
+        <category>topic</category>
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>Federated Registries (2015)</title>
+        <description>&lt;p&gt;End users, developers, and automated processes deal with persistently identified, self-explaining digital objects which are securely &amp;amp; redundantly managed &amp;amp; stored in the Internet which is an overlay on existing or future information storage systems.
+The Digital Object Cloud supplies discovery &amp;amp; verification of Digital Objects indexed in the Handle System and used in the DOI System as a component.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/federated-registries-2015.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/federated-registries-2015.html</guid>
+        
+        
+        <category>topic</category>
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>Difference between Oauth2 and OIDC (2017)</title>
+        <description>&lt;p&gt;There is a lot of confusion about OAuth2 vs OpenID-Connect tokens. The OAuth2 token can sometimes be used incorrectly. The ID tokens are for encapsulating ID of a user. If I have a bearer token, what do I do with it? Nothing prevents the resource from using the access token to connect to other resources.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/difference-between-oauth2-and-oidc-2017.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/difference-between-oauth2-and-oidc-2017.html</guid>
+        
+        
+        <category>topic</category>
+        
+        <category>topics</category>
+        
+      </item>
+    
+      <item>
+        <title>Cooperation of open source identity management products</title>
+        <description>&lt;p&gt;How to make it possible to integrate identity management source from different spaces for costumers?  Create an identity eco-system, something like a marketing place to increase innovation, re-assure some revenues; develop an open source identity management tool;
+evolved to something we call eco-system&lt;/p&gt;
+</description>
+        <pubDate>Thu, 16 Nov 2017 00:00:00 +0200</pubDate>
+        <link>http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/cooperation-of-open-source-identity-management-products.html</link>
+        <guid isPermaLink="true">http://localhost:4000/TiimeworkshopEu/topic/topics/2017/11/16/cooperation-of-open-source-identity-management-products.html</guid>
         
         
         <category>topic</category>

@@ -218,8 +218,25 @@ img {
 @import "exceltable";
 }
 
+$architecture-color: #510c76;
+$authentication-color: #d3002d;
+$business-color: #57567d;
+$federation-color: #008fbf;
+$opensource-color: #001689;
+$policyassurance-color: #66a5d2;
+$privacy-color: #2db98c;
+$protocols-color: #5cb92d;
+$security-color: #b9612d;
+
 .topics-list{
     .post{
+        width: 30%;
+        float: left;
+        display: inline-block;
+        margin: 10px 10px 30px 10px;
+        a{
+                color: #404040;
+            }
         .featured-image{
             position: relative;
             margin-bottom: 1.25rem;
@@ -227,6 +244,7 @@ img {
                 width: 100%;
                 height: auto
             }
+            
             .featured-category{
                 position: absolute;
                 top: 10px;
@@ -235,7 +253,8 @@ img {
                 text-transform: uppercase;
                 padding: 3px 15px;
                 font-size: 12px;
-                &:before{
+                z-index: 2;
+                span.bkg{
                         content: '';
                         background: pink;
                         width: 10px;
@@ -246,18 +265,121 @@ img {
                         bottom: 0;
                         -webkit-transition: width .25s cubic-bezier(.86,0,.07,1);
                         transition: width .25s cubic-bezier(.86,0,.07,1);
+                    z-index: 5;
                     
                 }
-                &:hover:before{
+                &:hover span.bkg{
                         width: 100%;
                     }
+                &.architecture{
+                    span.bkg{
+                        background: $architecture-color;
+                    }                
+                }
+                &.authentication{
+                    span.bkg{
+                        background: $authentication-color;
+                    } 
+                }
+                &.business{
+                    span.bkg{
+                        background: $business-color;
+                    } 
+                }
+                &.federation{
+                    span.bkg{
+                        background: $federation-color;
+                    } 
+                }
+                &.opensource{
+                    span.bkg{
+                        background: $opensource-color;
+                    } 
+                }
+                &.policyassurance{
+                    span.bkg{
+                        background: $policyassurance-color;
+                    } 
+                }
+                &.privacy{
+                    span.bkg{
+                        background: $privacy-color;
+                    } 
+                }
+                &.protocols{
+                    span.bkg{
+                        background: $protocols-color;
+                    } 
+                }
+                &.security{
+                    span.bkg{
+                        background: $security-color;
+                    } 
+                }
+                span.text{
+                    z-index: 9999;
+                    color: #404040;
+                    position: relative;
+                    -webkit-transition: width .25s cubic-bezier(.86,0,.07,1);
+                    transition: width .25s cubic-bezier(.86,0,.07,1);
+                    
+                }
+                &:hover span.text{
+                    color: #fff;
+                }
             }
             
         }
         h3.title{
-            color: #404040;
             font-size: 20px;
+            a{
+                color: #404040;
+                text-decoration: none;
+            }
         }
+        .entry{
+            font-size: 14px;
+            line-height: 1.3;
+            text-align: left;
+            a{
+                color: #404040;
+                text-decoration: none;
+            }
+        }
+    }
+}
+@media(min-width:768px){
+    .topics-list{
+        .post{
+        &:nth-child(3n+1) {
+            clear: both;
+        }
+    }
+    }
+}
+@media(max-width:767px){
+    .topics-list{
+        .post{
+            width: calc(50% - 20px); 
+        &:nth-child(2n+1) {
+            clear: both;
+        }
+    }
+    }
+}
+@media(max-width:449px){
+    .topics-list{
+        .post{
+            width: 100%; 
+            float: none;
+            display: block;
+            max-width: 250px;
+            margin-left: auto;
+            margin-right: auto;
+        &:nth-child(1n+1) {
+            clear: both;
+        }
+    }
     }
 }
 

@@ -7,6 +7,31 @@ show_title: no
 menu: main
 ---
 
+
+ <div class="row topics-list">
+    <div class="column">
+ {% for post in site.posts %}
+  {% if post.categories contains 'topics' %}
+	<div class="post">
+        <div class="featured-image">
+            <a href="{{post.more}}" title="{{ post.title }}" alt="{{ post.title }}">
+                <img src="{{ site.url }}/{{ site.baseurl }}/topic/images/{{post.img}}">
+                <div class="featured-category {{post.color}}"><span class="bkg"></span><span class="text">{{post.cat}}</span></div>
+            </a>
+        </div>
+		<h3 class="title"><a href="{{post.more}}" title="{{ post.title }}" alt="{{ post.title }}">{{ post.title }}</a></h3>
+		<div class="entry">
+            <a href="{{post.more}}" title="{{ post.title }}" alt="{{ post.title }}">
+			{{ post.content | strip_html }}
+            </a>
+		</div>
+	</div>
+  {% endif %}
+{% endfor %}
+
+    </div>
+</div>
+
 ## Explore Identity Management Issues and Initiatives
 
 Internet identity, identity federation and personal data online are complex, continually evolving areas. 
@@ -135,23 +160,3 @@ the option to propose topics via a survey in advance. The context of the worksho
 - UMA
 - Unobservability with trusted 3rd parties
 
- <div class="row topics-list">
-    <div class="column">
-        <div class="col-md-4">
- {% for post in site.posts %}
-  {% if post.categories contains 'topics' %}
-	<div class="post">
-        <div class="featured-image">
-            <img src="{{post.img}}">
-            <div class="featured-category">{{post.cat}}</div>
-        </div>
-		<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-		<div class="entry">
-			{{ post.content | strip_html | truncatewords: 100 }}
-		</div>
-	</div>
-  {% endif %}
-{% endfor %}
-        </div>
-    </div>
-</div>

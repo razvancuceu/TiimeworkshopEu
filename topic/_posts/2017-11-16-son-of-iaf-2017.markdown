@@ -1,0 +1,11 @@
+---
+layout: post
+category: topics
+title: 'Son-of-IAF (2017)'
+img: authentication.jpg
+cat: Policy/Assurance
+more: http://tiimeworkshop.eu/wwwTiimeworkshopEu/tiime2017/session01.html
+color: policyassurance
+---
+
+Kantara IAF reloaded: How can the IAF be profiled and tailored to specific needs? E.g. there should not be restrictions on organizations submitting their own assessment rules, if their consumers accept it, because it is expensive to get third party assessments. Next steps: continue discussion at the Internet2 Global Summit.
