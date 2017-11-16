@@ -1,10 +1,12 @@
 ---
+<!--
 layout: page-nosidebar-full
 title: Schedule
 position: 4
 permalink: /schedule
 show_title: no
 menu: main
+-->
 ---
 
 ## Week Schedule (Preliminary)
