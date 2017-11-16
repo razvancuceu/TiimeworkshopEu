@@ -135,4 +135,23 @@ the option to propose topics via a survey in advance. The context of the worksho
 - UMA
 - Unobservability with trusted 3rd parties
 
- 
+ <div class="row topics-list">
+    <div class="column">
+        <div class="col-md-4">
+ {% for post in site.posts %}
+  {% if post.categories contains 'topics' %}
+	<div class="post">
+        <div class="featured-image">
+            <img src="{{post.img}}">
+            <div class="featured-category">{{post.cat}}</div>
+        </div>
+		<h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+		<div class="entry">
+			{{ post.content | strip_html | truncatewords: 100 }}
+		</div>
+	</div>
+  {% endif %}
+{% endfor %}
+        </div>
+    </div>
+</div>
