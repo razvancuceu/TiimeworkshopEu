@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Connecting Professionals Across Sectors"
+category: posts
 ---
 
 
